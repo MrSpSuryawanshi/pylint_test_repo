@@ -22,7 +22,7 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Install Custom Requests Rule Plugin
-        run: pip install -e ./custom-requests-rule
+        run: pip install -e ./custom_requests_rule
 
       - name: Lint code
         run: pylint .
