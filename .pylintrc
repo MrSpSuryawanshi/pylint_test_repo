@@ -1,2 +1,2 @@
 [MASTER]
-load-plugings =custom.custom_requests_rule
+load-plugins =custom.custom_requests_rule
