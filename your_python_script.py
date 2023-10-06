@@ -1,2 +1,2 @@
-print("hello user")
-a=eval("12+7")
+
+print("hello")
