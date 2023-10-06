@@ -22,7 +22,7 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Run Pylint with Custom Requests Rule
-        run: pylint --load-plugins=pylint_test_repo.custom_requests_rule your_python_script.py
+        run: pylint --load-plugins=pylint_test_repo/custom_requests_rule your_python_script.py
 
       - name: Lint code
         run: pylint .
