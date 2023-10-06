@@ -21,11 +21,11 @@ jobs:
       - name: Update pip
         run: pip install --upgrade pip
 
-      - name: Install Custom Requests Rule Plugin
-        run: pip install -e ./custom_requests_rule.py
-
-      - name: Lint code
-        run: pylint .
+      - name: Copy custom rule to working directory
+        run: cp pylint_test_repo/custom_requests_rule.py.
 
       - name: Run Pylint with Custom Requests Rule
         run: pylint --load-plugins=custom_requests_rule your_python_script.py
+
+      - name: Lint code
+        run: pylint .
