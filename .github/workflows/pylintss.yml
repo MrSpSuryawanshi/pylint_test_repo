@@ -23,8 +23,7 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Copy custom rule to working directory
-        run: mv custom/custom_requests_rule.py .
-
+        run: cp custom/custom_requests_rule.py .
 
       - name: Lint code
         run: pylint .
