@@ -21,6 +21,9 @@ jobs:
       - name: Update pip
         run: pip install --upgrade pip
 
+      - name: Install Custom Requests Rule Plugin
+        run: pip install custom.custom_requests_rule
+
       - name: Run Pylint with Custom Requests Rule
         run: pylint --load-plugins=custom.custom_requests_rule pylint_test_repo/your_python_script.py
 
