@@ -19,7 +19,7 @@ jobs:
         run: pip install pylint
 
       - name: Install Custom Requests Rule Plugin
-        run: pip install custom_requests_rule  
+        run: pip install -e ./custom-requests-rule
 
       - name: Lint code
         run: pylint .
