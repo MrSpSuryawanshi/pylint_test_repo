@@ -25,7 +25,7 @@ jobs:
         run: cp custom/custom_requests_rule.py .
 
       - name: Run Pylint with Custom Requests Rule
-        run: pylint --load-plugins=custom_requests_rule your_python_script.py
+        run: pylint --load-plugins=custom/custom_requests_rule your_python_script.py
 
       - name: Lint code
         run: pylint .
