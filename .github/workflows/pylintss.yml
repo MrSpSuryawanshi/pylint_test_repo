@@ -18,6 +18,9 @@ jobs:
       - name: Install Linter
         run: pip install pylint
 
+      - name: Update pip
+        run: pip install --upgrade pip
+
       - name: Install Custom Requests Rule Plugin
         run: pip install -e ./custom-requests-rule
 
