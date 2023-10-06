@@ -22,10 +22,10 @@ jobs:
         run: pip install --upgrade pip
 
       - name: Copy custom rule to working directory
-        run: cp custom/custom_requests_rule.py .
+        run: mv custom/custom_requests_rule.py .
 
       - name: Run Pylint with Custom Requests Rule
-        run: pylint --load-plugins=custom.custom_requests_rule your_python_script.py
+        run: pylint --load-plugins=/my/custom/plugins/custom.custom_requests_rule your_python_script.py
 
       - name: Lint code
         run: pylint .
