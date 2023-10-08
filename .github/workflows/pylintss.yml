@@ -21,9 +21,6 @@ jobs:
 
       - name: Update pip
         run: pip install --upgrade pip
-
-      - name: plugin install
-        run: pip install my_plugin_1.py
         
       - name: Lint code
         run: pylint .
